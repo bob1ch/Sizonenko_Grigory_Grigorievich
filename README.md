@@ -23,6 +23,8 @@ His name is [Mr. Fresh](https://silly-cat.fandom.com/wiki/Mr._Fresh)
 
  <span style="color:blue">:see_no_evil:See you later:see_no_evil:</span>
  
+ <span style="color:blue">some *blue* text</span>.
+ 
 ![Solid_snake][Solid_gif]
 
 [Solid_gif]: https://i.pinimg.com/originals/86/b8/72/86b872bc4dc4e2457128dd465a26ce68.gif
