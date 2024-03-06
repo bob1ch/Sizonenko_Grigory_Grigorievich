@@ -21,7 +21,7 @@ His name is [Mr. Fresh](https://silly-cat.fandom.com/wiki/Mr._Fresh)
 
  Oh my.. He is _really fresh_
 
- <span style="color:green">:see_no_evil:See you later:see_no_evil:</span>.
+ <span style="color:blue">:see_no_evil:See you later:see_no_evil:</span>
  
 ![Solid_snake][Solid_gif]
 
