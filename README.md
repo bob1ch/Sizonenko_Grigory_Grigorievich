@@ -20,10 +20,11 @@ His name is [Mr. Fresh](https://silly-cat.fandom.com/wiki/Mr._Fresh)
  His name comes from his tendency to prefer **fresh** food from the automatic dispenser, which is linked to livestream donations
 
  Oh my.. He is _really fresh_
+ ```python
+print('Hello world!')
+```
 
- <span style="color:blue">:see_no_evil:See you later:see_no_evil:</span>
- 
- <span style="color:blue">some *blue* text</span>.
+#### :see_no_evil:See you later:see_no_evil:
  
 ![Solid_snake][Solid_gif]
 
