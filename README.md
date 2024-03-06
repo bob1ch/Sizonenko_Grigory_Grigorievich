@@ -1,16 +1,24 @@
-# ex2
+# Repo for mobile apps and games
 
-A new Flutter project.
+## **Git is cool**
 
-## Getting Started
+#### _May the Force be with you_
 
-This project is a starting point for a Flutter application.
+* list
+  * inner list1
+  * inner list2
+* not inner list
 
-A few resources to get you started if this is your first Flutter project:
+You can use git for _cooperative_ work with your **friends**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+##### Look at him
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+His name is [Mr. Fresh](https://silly-cat.fandom.com/wiki/Mr._Fresh)
+
+![Cat][MrFresh]
+
+ His name comes from his tendency to prefer **fresh** food from the automatic dispenser, which is linked to livestream donations
+
+ Oh my.. He is _really fresh_
+
+[MrFresh]: https://static.wikia.nocookie.net/silly-cat/images/4/4d/Mr._Fresh.png
