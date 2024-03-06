@@ -21,10 +21,10 @@ His name is [Mr. Fresh](https://silly-cat.fandom.com/wiki/Mr._Fresh)
 
  Oh my.. He is _really fresh_
  ```python
-print('Hello world!')
+print('Hello Mr. Fresh!')
 ```
 
-#### :see_no_evil:See you later:see_no_evil:
+### :see_no_evil:See you later:see_no_evil:
  
 ![Solid_snake][Solid_gif]
 
