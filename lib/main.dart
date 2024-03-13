@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'FaceLiberty'),
@@ -81,6 +81,11 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        leading: const IconButton(
+          icon: Icon(Icons.menu),
+          tooltip: 'Navigation menu',
+          onPressed: null,
+        ),
         title: Text(widget.title),
       ),
       body: Center(
@@ -98,6 +103,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       'Status: I like smell of LIBERTY on morning',
                     )
                   ],
+                )
+              ],
+            ),
+            Row(
+              children: [
+                ImageSection(image: 'assets/images/man_liberty.png'),
+                TextSection(
+                  description:
+                  'bobich',
                 )
               ],
             ),
@@ -121,6 +135,43 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class ImageSection extends StatelessWidget {
+  const ImageSection({super.key, required this.image});
+
+  final String image;
+
+  @override
+  Widget build(BuildContext context) {
+    // #docregion Image-asset
+    return Image.asset(
+      image,
+      scale: 3,
+      fit: BoxFit.contain,
+    );
+    // #enddocregion Image-asset
+  }
+}
+
+class TextSection extends StatelessWidget {
+  const TextSection({
+    super.key,
+    required this.description,
+  });
+
+  final String description;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(32),
+      child: Text(
+        description,
+        softWrap: true,
+      ),
     );
   }
 }
