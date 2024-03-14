@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -57,6 +58,12 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  String _quote = ' ';
+  var _quotes = ['MY LEG! FOR THE LOVE OF LIBERTY MYY LEGG!!',
+    'That\'s one more victory for the right side of history!',
+    'Another sample for de-mo-cra-cy!',
+    'How about a nice big cup of Liber-TEA!', 'Liberty save meeee',
+    'For managed democracy'];
 
   void _incrementCounter() {
     setState(() {
@@ -67,6 +74,13 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       var rng = Random();
       _counter += rng.nextInt(100);
+    });
+  }
+
+  void _generateQuote() {
+    setState(() {
+      var rng = Random().nextInt(4);
+      _quote = _quotes[rng];
     });
   }
 
@@ -93,32 +107,41 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Row(
               children: [
-                Image.asset('assets/images/man_liberty.png', scale: 3.5),
-                Column(
-                  children: [
-                    const Text(
-                      'Name: bob1ch',
-                    ),
-                    const Text(
-                      'Status: I like smell of LIBERTY on morning',
-                    )
-                  ],
-                )
-              ],
-            ),
-            Row(
-              children: [
                 ImageSection(image: 'assets/images/man_liberty.png'),
                 TextSection(
-                  description:
-                  'bobich',
+                  description1:
+                  'Name: bob1ch',
+                  description2:
+                  'Status: I like smell of LIBERTY on morning'
                 )
               ],
             ),
 
 
-
-
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  children: [
+                    Text(
+                        'Favourite quote ',
+                        softWrap: true,
+                        textAlign: TextAlign.start,
+                        style: TextStyle(fontSize: 20)
+                    ),
+                    Text(
+                      '$_quote',
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                      onPressed: _generateQuote,
+                      child: const Text('Generate')),
+                )
+              ]),
 
             const Text(
               'You have killed enemies of Democracy:',
@@ -134,7 +157,8 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
@@ -159,18 +183,33 @@ class ImageSection extends StatelessWidget {
 class TextSection extends StatelessWidget {
   const TextSection({
     super.key,
-    required this.description,
+    required this.description1,
+    required this.description2,
   });
 
-  final String description;
+  final String description1;
+  final String description2;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(32),
-      child: Text(
-        description,
-        softWrap: true,
+      padding: const EdgeInsets.all(15),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            description1,
+            softWrap: true,
+            textAlign: TextAlign.start,
+            style: TextStyle(fontSize: 40)
+          ),
+          Text(
+            description2,
+            softWrap: true,
+            textAlign: TextAlign.start,
+            style: TextStyle(fontSize: 25)
+          ),
+        ],
       ),
     );
   }
