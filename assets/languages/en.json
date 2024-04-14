@@ -1,0 +1,12 @@
+{
+  "nav_menu": "Navigation menu",
+  "name": "Name: ",
+  "status": "Status: ",
+  "quote": "Favourite quote: ",
+  "gen": "Generate",
+  "news_title": "What's new?",
+  "vote": "Voted for liberty: ",
+  "kills": "You have killed enemies of Democracy: ",
+  "like": "like",
+  "plus": "kill"
+}
