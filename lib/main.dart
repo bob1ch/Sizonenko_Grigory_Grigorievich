@@ -4,6 +4,8 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:ex2/functions/myapp.dart';
 
+import 'functions/myapprouter.dart';
+
 void main() async{
 
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,7 +16,7 @@ void main() async{
           supportedLocales: [Locale('en'), Locale('ru')],
           path: 'assets/languages',
           fallbackLocale: Locale('en'),
-          child: MyApp()
+          child: App()
       )
   );
 }
