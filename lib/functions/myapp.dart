@@ -1,8 +1,12 @@
+
+import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:ex2/UI/homepage.dart';
+import 'package:ex2/UI/homepage_screen.dart';
 
+import '../routing/app_router.dart';
 
+@RoutePage()
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

@@ -7,10 +7,12 @@ import 'dart:math';
 import 'dart:ui';
 import 'package:ex2/generated/locale_keys.g.dart';
 import 'package:ex2/generated/codegen_loader.g.dart';
+import 'package:auto_route/auto_route.dart';
+import '../routing/app_router.dart';
 
 import 'package:flutter/widgets.dart';
 
-
+@RoutePage()
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -85,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: IconButton(
           icon: Icon(Icons.menu),
           tooltip: LocaleKeys.nav_menu.tr(),
-          onPressed: null,
+          onPressed: () => context.router.push(const SettingsRoute()),
         ),
         title: Text(widget.title),
         actions: [
